@@ -1,8 +1,11 @@
 import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'JokePage.dart';
+
 import 'Fetching_Jokes.dart';
+import 'JokePage.dart';
+import 'const.dart';
 
 class LoadingScreen extends StatelessWidget {
   @override
@@ -38,10 +41,10 @@ class _LoadingChildScreenState extends State<LoadingChildScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.cyanAccent,
+      backgroundColor: neoDarkShadow,
       body: Center(
         child: SpinKitChasingDots(
-          color: Colors.white,
+          color: neoWhite,
           size: 100.0,
         ),
       ),
